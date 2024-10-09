@@ -1,0 +1,74 @@
+
+/*https://curriculumya.com/plantillas-curriculum-vitae/word */
+
+.flex-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80vh;
+    height: 100vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 9px;
+}
+
+.container-main{
+    width: 100vh;
+    height: 100vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container-body{
+    width: 80vh;
+    height: 100vh;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.container-main-img{
+    background-color: red;
+
+}
+
+.container-main-aboutMe{
+    background-color: bisque;
+    
+}
+
+.container-body-contacto{
+    background-color: beige;
+
+}
+
+.container-body-habilidades{
+    background-color: blueviolet;
+
+}
+
+.container-body-idiomas{
+    background-color: chocolate;
+}
+
+.container-body-interes{
+    background-color: darkgreen;
+}
+
+.container-body-experecenciaProfesional{
+    background-color: darkmagenta;
+    grid-row: span 2;
+}
+
+.container-body-formacion{
+    background-color: indigo;
+    grid-row: span 2;
+}
