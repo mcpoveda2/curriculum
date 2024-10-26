@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+section{
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+}
 /*Nav Decoration*/
 .navbar {
     display: flex;
@@ -47,10 +51,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
     text-align: left;
     background-color: #f5f8ff; /* Fondo claro */
     font-family: Arial, sans-serif;
+    padding: 2vw;
 }
 
 
@@ -105,12 +109,12 @@
 #about-me {
     width: 100%;
     height: auto;
+    padding: 1vw;
 }
 
 .about-header {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
 }
 
 .aboutme-image{
@@ -118,11 +122,13 @@
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover;
+    width: 25vw; /* Tamaño relativo a la pantalla */
+    max-width: 300px; /* Tamaño máximo en pantallas grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes suaves */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+    margin : 5vw 10vw ;
+    
 }
 
 .intro-text{
@@ -130,53 +136,72 @@
 }
 
 .introduction h2 {
-    font-size: 0.9rem;
+    font-size: 0.75rem; /* Tamaño pequeño para subtítulo */
+    font-family: 'Roboto', sans-serif;
     color: #888;
     font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+    
 }
 
 .introduction p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; /* Título principal grande */
+    font-weight: 700;
+    line-height: 1.2;
     color: #222;
 }
 
 .about-header-info{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8%;
 }   
 
 .about-header-info p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 10px;
-    width: 50%;
+    margin: 5vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333; /* Cambia el color según tu diseño */
 }
 
 /*Experience*/
 
 /* Sección de experiencia y educación */
 .experience-education h2 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Título de sección grande */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .experience-item {
-    margin-bottom: 20px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
 .experience-item h3 {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Nombre de institución o título de posición */
     font-weight: bold;
     color: #222;
+    
+}
+
+.experience-item-info-p{
+    font-weight: bold;
+}
+
+.experience-item p {
+    font-size: 1rem; /* Descripción o detalles de la posición */
+    color: #555;
+    margin: 0.5em 0;
+}
+
+.date {
+    font-size: 0.9rem; /* Fecha al lado derecho */
+    color: #888;
+    white-space: nowrap;
+    padding-top: 0.5em;
 }
