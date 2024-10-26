@@ -99,3 +99,84 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     filter: brightness(1.1) saturate(1.2); /* Aumenta brillo y saturación */
 }
+
+/*About me*/
+
+#about-me {
+    width: 100%;
+    height: auto;
+}
+
+.about-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.aboutme-image{
+    width: 40%;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.intro-text{
+    width: 60%;
+}
+
+.introduction h2 {
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.introduction p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-header-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}   
+
+.about-header-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+/*Experience*/
+
+/* Sección de experiencia y educación */
+.experience-education h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+}
