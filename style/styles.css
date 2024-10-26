@@ -4,23 +4,26 @@
     box-sizing: border-box;
 }
 
-section{
-    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
-}
 /*Nav Decoration*/
-.navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+
+.nav{
+    position: fixed;  
+    top: 0;
+    z-index: 1000; 
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #56C3F2;
+    background-color: #1A57D3;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.navbar {
+    width: 50%;
 }
 
 .logo {
-    width: 5rem;
+    width: 4rem;
     height: auto;
-    font-weight: bold;
+    
 }
 
 .navbar-menu {
@@ -47,22 +50,6 @@ section{
 
 /*Inicio*/
 
-#inicio {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;
-    background-color: #f5f8ff; /* Fondo claro */
-    font-family: Arial, sans-serif;
-    padding: 2vw;
-}
-
-
-.inicio-content {
-    max-width: 50%;
-    justify-content: center;
-    height: auto;
-}
 
 .inicio h1 {
     font-size: 3rem;
@@ -71,50 +58,48 @@ section{
     position: relative;
 }
 
-.hero-content::after {
-    content: "MICHAEL"; /* Texto grande en el fondo, personalizado */
-    font-size: 8rem;
-    color: rgba(0, 0, 0, 0.05); /* Color gris claro */
-    position: absolute;
-    top: 10%;
-    left: 0;
-    z-index: -1;
-}
-
-.inicio-image{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
 .highlight {
     color: #3b82f6;
 }
 
-.inicio p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #555;
-}
-
-.inicio-image img{
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    filter: brightness(1.1) saturate(1.2); /* Aumenta brillo y saturación */
-}
 
 /*About me*/
+
+.gradient-background {
+    background: linear-gradient(
+      300deg,
+      #3A7CA5, /* Azul oscuro */
+      #5FA8D3, /* Azul intermedio */
+      #B8DFFB  /* Azul claro */
+    );
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 #about-me {
     width: 100%;
     height: auto;
     padding: 1vw;
+    
 }
 
 .about-header {
     display: flex;
     align-items: flex-start;
+    
 }
 
 .aboutme-image{
@@ -123,16 +108,17 @@ section{
 
 .profile-photo {
     width: 25vw; /* Tamaño relativo a la pantalla */
-    max-width: 300px; /* Tamaño máximo en pantallas grandes */
+    max-width: 350px; /* Tamaño máximo en pantallas grandes */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 5px; /* Bordes suaves */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
-    margin : 5vw 10vw ;
+    margin : 9vw 15vh;
     
 }
 
 .intro-text{
     width: 60%;
+    margin: 3vw 6vw;
 }
 
 .introduction h2 {
@@ -147,8 +133,8 @@ section{
 
 .introduction p {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem; /* Título principal grande */
-    font-weight: 700;
+    font-size: 1.75rem; /* Título principal grande */
+    font-weight: 500;
     line-height: 1.2;
     color: #222;
 }
@@ -180,12 +166,14 @@ section{
     position: relative;
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid #ddd; /* Línea inferior */
 }
 
 .experience-item h3 {
     font-size: 1.3rem; /* Nombre de institución o título de posición */
     font-weight: bold;
     color: #222;
+    margin: 2% 0;
     
 }
 
@@ -205,3 +193,11 @@ section{
     white-space: nowrap;
     padding-top: 0.5em;
 }
+
+/*Proyect*/
+
+#carouselExample {
+    width: 75%; /* Ajusta el ancho según lo necesites */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
