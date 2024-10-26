@@ -1,92 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style/styles.css">
-    <title>Document</title>
 </head>
 <body>
-    <nav>
+    <!-- Navbar -->
+    <header>
+    
+        <nav class = "navbar">
+            <div class="navbar-logo"></div>
 
-    </nav>
+            <ul  class="navbar-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aboutme">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class = "flex-container">
-
-        <div class="container">
-            
-            <div class="container-main-img">
-                <img src="assets/profile_img.jpg" alt="Imagen de perfil" class="imagen-circular ">
-            
-            </div>
-            <div class="container-main-aboutMe">
-                <h1>Michael Poveda</h1>
-                <h3>Ingeniero en Computación</h3>
-                <h2>Perfil Profesional</h2>
-                <p>
-                   
-                    Soy un estudiante de Ingeniería en Computación con un enfoque en desarrollo web full stack y ciencia de datos. Me apasiona desarrollar soluciones tecnológicas eficientes y obtener insights significativos para la empresa, combinando mis habilidades técnicas con el análisis de datos para optimizar procesos y tomar decisiones informadas. Me considero una persona responsable y activa, siempre en busca de nuevos desafíos que me permitan mejorar y aplicar mis conocimientos en proyectos que generen un impacto positivo</p>
-
-            </div>
-            <div class="container-body-contacto">
-                <h2>Contacto</h2>
-                <p><a href="https://www.linkedin.com/in/michael-poveda-195683252/">Linkedin</a></p>
-                <p><a href="https://mcpoveda2.github.io/mcpovedaPortafolio/">Portafolio</a></p>
-                <p>mcpoveda@espol.edu.ec</p>
-                <p>593 96 878 6281</p>
-                
-
-            </div>
-            <div class="container-body-experecenciaProfesional">
-                <h2>Experiencia Profesional</h2>
-                
-                <h3>Ride Attendant</h3>
-                <p>Lost Mine</p>
-                <p>20-feb-2024 a 1-may-2024 (Pigeon Forge,USA)</p>
-
-                <h3>Data Analyst Junior</h3>
-                <p>Broadnet</p>
-                <p>20-feb-2024 a 1-may-2024 (Pigeon Forge,USA)</p>
-            </div>
-            <div class="container-body-habilidades">
-                <h2>Habilidades</h2>
-                <ul>
-                    <li>Ciencia de datos (Python, scikit-learn)</li>
-                    <li>Analisis de datos (Excel, Power BI, Pandas)</li>
-                    <li>Bases de datos (MySQL Database)</li>
-                    <li>Control de versiones (Git, GitHub)</li>
-                    <li>Diseño de interfaces (Figma)</li>
-                </ul>
-            </div>
-            <div class="container-body-idiomas">
-                <h2>Idiomas</h2>
-                <p>Español : Nativo</p>
-                <p>Ingles : Intermedio Alto</p>
-
-            </div>
-            <div class="container-body-formacion">
-
-            </div>
-            <div class="container-body-interes">
-                <h2>Interes</h2>
-                <ul>
-                    <li>Videojuegos</li>
-                    <li>Anime</li>
-                    <li>Gym</li>
-                </ul>
+    <!-- Inicio -->
+    <section id="inicio">
         
+        
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="aboutme">
+        <h2>Sobre Mí</h2>
+        <p>Descripción sobre tu perfil profesional, tus objetivos y cualidades que te definen como desarrollador.</p>
+
+
+            <!-- Experiencia -->
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <div class="job">
+                <h3>Nombre de la Empresa</h3>
+                <p><strong>Posición:</strong> Desarrollador Frontend</p>
+                <p><strong>Duración:</strong> Mayo 2021 - Actualidad</p>
+                <p>Descripción breve de tus logros y responsabilidades.</p>
             </div>
-            
+            <!-- Agregar más experiencia laboral aquí -->
+        </section>
+
+            <!-- Cursos y Certificaciones -->
+        <section id="cursos">
+            <h2>Cursos y Certificaciones</h2>
+            <div class="course">
+                <h3>Nombre del Curso</h3>
+                <p><strong>Institución:</strong> Plataforma (e.g., Udemy, Coursera)</p>
+                <p><strong>Fecha:</strong> Fecha de finalización</p>
+                <p>Descripción de las habilidades aprendidas en el curso.</p>
+            </div>
+            <!-- Agregar más cursos aquí -->
+        </section>
+
+        <!-- Estudios -->
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <div class="education">
+                <h3>Grado Académico</h3>
+                <p><strong>Institución:</strong> Universidad</p>
+                <p><strong>Duración:</strong> Año de inicio - Año de finalización</p>
+                <p>Logros académicos y cursos relevantes.</p>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML - Avanzado</li>
+                <li>CSS - Avanzado</li>
+                <li>JavaScript - Intermedio</li>
+                <li>React - Intermedio</li>
+                <!-- Agregar más habilidades aquí -->
+            </ul>
+        </section>
+
+    </section>
+
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Nombre del Proyecto</h3>
+            <p>Descripción del proyecto, tecnologías utilizadas y enlace al código o demo en vivo.</p>
+            <a href="https://github.com/tu-repositorio" target="_blank">Ver Proyecto</a>
         </div>
-        
-        
+        <!-- Agregar más proyectos aquí -->
+    </section>
 
-    </main>
+    
 
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+            <!-- Agregar más redes sociales si deseas -->
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-
+        <p>&copy; 2023 Tu Nombre</p>
     </footer>
-    
-    
 </body>
 </html>

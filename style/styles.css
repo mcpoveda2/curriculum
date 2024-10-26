@@ -1,63 +1,37 @@
 
-/*https://curriculumya.com/plantillas-curriculum-vitae/word */
-
-.flex-container{
+/*Nav Decoration*/
+.navbar {
     display: flex;
-    height: 100vh;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-.container{
-    width: 90vh;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    
+    padding: 1rem 2rem;
+    background-color: #56C3F2;
 }
 
-
-.container-main-img{
-    background-color: blue;
-    padding: 30px;
-    
-    
-
-}
-.imagen-circular {
-    width: 200px; /* Ocupa el 100% del ancho del contenedor */
-    height: 200px; /* Ocupa el 100% de la altura del contenedor */
-    border-radius: 50%; /* Hace la imagen circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsión */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.container-main-aboutMe{
-    background-color: blue;
-    
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
 }
 
-.container-body-contacto{
-    
-
+.navbar-menu li {
+    display: inline;
 }
 
-.container-body-habilidades{
-    
-
+.navbar-menu li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.container-body-idiomas{
-   
+.navbar-menu li a:hover {
+    color: #f05454;
 }
 
-.container-body-interes{
-    
-}
-
-.container-body-experecenciaProfesional{
-    grid-row: span 2;
-}
-
-.container-body-formacion{
-    grid-row: span 2;
-}
