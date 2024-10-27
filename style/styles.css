@@ -68,15 +68,26 @@
 .gradient-background {
     background: linear-gradient(
       300deg,
-      #3A7CA5, /* Azul oscuro */
-      #5FA8D3, /* Azul intermedio */
-      #B8DFFB  /* Azul claro */
+      #002F91,  /* Azul oscuro */
+      #0046D5,  /* Azul base */
+      #3368E8
     );
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
 
-  
+  .gradient-background-2{
+    background: linear-gradient(
+      300deg,
+      #4A5672,
+      #6A7B92
+    );
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+   
+
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -124,7 +135,7 @@
 .introduction h2 {
     font-size: 0.75rem; /* Tamaño pequeño para subtítulo */
     font-family: 'Roboto', sans-serif;
-    color: #888;
+    color: #002F91;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -136,7 +147,7 @@
     font-size: 1.75rem; /* Título principal grande */
     font-weight: 500;
     line-height: 1.2;
-    color: #222;
+    color: #C5CCD5;
 }
 
 .about-header-info{
@@ -150,7 +161,7 @@
     font-weight: 400;
     font-size: 1em;
     line-height: 1.6;
-    color: #333; /* Cambia el color según tu diseño */
+    color: #C5CCD5; /* Cambia el color según tu diseño */
 }
 
 /*Experience*/
@@ -160,6 +171,7 @@
     font-size: 2rem; /* Título de sección grande */
     font-weight: bold;
     margin-bottom: 1em;
+    color: #0046D5;
 }
 
 .experience-item {
@@ -172,7 +184,7 @@
 .experience-item h3 {
     font-size: 1.3rem; /* Nombre de institución o título de posición */
     font-weight: bold;
-    color: #222;
+    color: #A3C3FF;
     margin: 2% 0;
     
 }
@@ -183,13 +195,13 @@
 
 .experience-item p {
     font-size: 1rem; /* Descripción o detalles de la posición */
-    color: #555;
+    color: #C5CCD5;
     margin: 0.5em 0;
 }
 
 .date {
     font-size: 0.9rem; /* Fecha al lado derecho */
-    color: #888;
+    color: #C5CCD5;
     white-space: nowrap;
     padding-top: 0.5em;
 }
@@ -199,5 +211,25 @@
 #carouselExample {
     width: 75%; /* Ajusta el ancho según lo necesites */
     margin: 0 auto; /* Centra el carrusel */
+}
+
+.project-titulo{
+    color: #FFFFFF; /* Blanco puro para buen contraste */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+.white{
+    color: #F0F4FA; /* Blanco suave para buena legibilidad */
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-sub{
+    color: #6A7B92; /* Amarillo dorado para resaltar sin ser demasiado brillante */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
