@@ -156,29 +156,53 @@
     <!-- Contacto -->
 
     <section id="contactme">
-        <h2>Contacto</h2>
-        <form action="#" method="POST">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <div class="contact-container">
+            <div class="form-box">
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="input-box">
+                        <input type="text" placeholder="Name" required>
+                        <span class="icon">👤</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                        <span class="icon">✉️</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+            <div class="illustration">
+                <!-- Puedes incluir aquí una imagen o SVG para el personaje decorativo -->
+                <div class="character">
+                    <span class="emoji">📧</span>
+                    <p>I'm here to help you!</p>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>Our Location</h3>
+                <!-- Agrega aquí el iframe de Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
-            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
-            <!-- Agregar más redes sociales si deseas -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Tu Nombre</p>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Contact me:</p>
+                <p>Email: <a href="mcpoveda@espol.edu.ec">tuemail@example.com</a></p>
+                <p>LinkedIn: <a href="www.linkedin.com/in/michael-poveda-195683252" >LinkedIn Profile</a></p>
+            </div>
+        </footer>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
