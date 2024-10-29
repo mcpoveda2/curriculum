@@ -403,3 +403,46 @@ button {
 button:hover {
     background-color: #333;
 }
+
+
+/*Footer*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+    color: #aaa;
+}
+
+footer .footer-content a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .footer-content a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #aaa;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
