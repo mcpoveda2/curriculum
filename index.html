@@ -13,7 +13,7 @@
     <header class="nav">
         <nav class ="navbar">
             <div class="navbar-logo"><img src="assets/icon.png" alt="" class="logo"></div>
-            <ul  class="navbar-menu">
+            <ul class="navbar-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#about-me">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -37,7 +37,7 @@
     </section>
 
     <!-- Sobre Mí -->
-    <section id="about-me">
+    <section id="about-me" class="gradient-background-purple">
         <div class="about-header">
             <div class="aboutme-image">
                 <img src="assets/profile_img.jpg" alt="Foto de perfil" class="profile-photo">
@@ -102,33 +102,33 @@
 
     <!-- Proyectos -->
     
-    <section id="projects" class="gradient-background flexContainer">
+    <section id="projects" class="background-black flexContainer">
         <div class="myProjectsContainer">
             <div class="h2Proyect">
                 <h2>My Projects</h2>
             </div>
 
-            <div class="project project1">
+            <div class="project project1 gradient-background-purple">
                 <div class="projectImg">
                     <img src="assets/ProjectChurn.jpg" alt="" class="imgProyect">
                 </div>
                 <div class="projectInfo">
                     <div class="contenedorCentral">
-                        <h3 class="projectName1">Predicting Customer Churn with AI Models</h3>
-                        <h4 class="projectTech1">Tech: Pandas, scikit-learn</h4>
-                        <p class="projectExplain1">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                        <h3 class="projectName">Predicting Customer Churn with AI Models</h3>
+                        <h4 class="projectTech">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
                     </div>
                     
                 </div>
 
             </div>
 
-            <div class="project project2">
+            <div class="project project1 gradient-background-purple">
                 <div class="projectInfo">
                     <div class="contenedorCentral">
-                        <h3 class="projectName2">Predicting Customer Churn with AI Models</h3>
-                        <h4 class="projectTech2">Tech: Pandas, scikit-learn</h4>
-                        <p class="projectExplain2">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                        <h3 class="projectName">Customer Segmentation for Banking Insights</h3>
+                        <h4 class="projectTech">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain">Utilized clustering models in Python to categorize bank clients into segments, enabling targeted marketing and personalized service strategies.</p>
                     </div>
                 </div>
                 <div class="projectImg">
@@ -136,16 +136,16 @@
                 </div>
             </div>
 
-            <div class="project project1">
+            <div class="project project1 gradient-background-purple">
                 <div class="projectImg">
                     <img src="assets/ProjectRequeriments.png" alt="" class="imgProyect">
 
                 </div>
                 <div class="projectInfo">
                     <div class="contenedorCentral">
-                        <h3 class="projectName1">Predicting Customer Churn with AI Models</h3>
-                        <h4 class="projectTech1">Tech: Pandas, scikit-learn</h4>
-                        <p class="projectExplain1">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                        <h3 class="projectName">Analyzing Service Efficiency in Client Requests</h3>
+                        <h4 class="projectTech">Tech: Pandas, Power BI and Relational DataBases</h4>
+                        <p class="projectExplain">Assessed response efficiency and request patterns across branches using Power BI and Python, providing insights into executive performance and service bottlenecks.</p>
                     </div>
                     
                     
@@ -153,12 +153,12 @@
                 
             </div>
 
-            <div class="project project2">
+            <div class="project project1 gradient-background-purple">
                 <div class="projectInfo">
                     <div class="contenedorCentral">
-                        <h3 class="projectName2">Predicting Customer Churn with AI Models</h3>
-                        <h4 class="projectTech2">Tech: Pandas, scikit-learn</h4>
-                        <p class="projectExplain2">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                        <h3 class="projectName">Tindog: A Fun Web App for Dog Lovers</h3>
+                        <h4 class="projectTech">Tech: Html, Css and Bootstrap</h4>
+                        <p class="projectExplain">Created a mock website using HTML, CSS, and Bootstrap to showcase web development skills, mimicking a "Tinder for dogs" platform for practice.</p>
                     </div>
                 </div>
                 <div class="projectImg">
@@ -176,64 +176,65 @@
 
     <!-- Contacto -->
 
-    <section id="contactme" class="flexContainer">
+    
+    <section id="contactme" class="gradient-background-purple">
 
-
-        <div class="GridContainer">
-            <div class="flexContainerContactme">
-                <div class="containerContactMe">
-                    <h2>Contact Us</h2>
-                    <p class="subheading">Please fill this form in a decent manner</p>
-                    <form action="/send" method="post">
-                        <!-- Nombre completo -->
-                        <p>Full Name:</p>
-                        <div class="form-row">
-                            <input type="text" id="FirstName" name="FirstName" required>
-                            <input type="text" id="LastName" name="LastName" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="FirstName" class="form-label">First Name</label>
-                            <label for="LastName" class="form-label">Last Name</label>
-                        </div>
-                        
-                        <!-- Correo electrónico -->
-                        <p>E-mail:</p>
-                        <input type="email" id="Email" name="Email" class="form-input" required>
-                        <p class="hint">example@example.com</p>
-                        
-                        <!-- Mensaje -->
-                        <p>Message:</p>
-                        <textarea id="Message" name="Message" class="form-input" rows="4" required></textarea>
-                        
-                        <!-- Botón de envío -->
-                        <button type="submit">SUBMIT</button>
-                    </form>
+        <h2 class="title_flex InformationTitle">Information Section</h2>
+        <div class="flexContainer">
+            <div class="GridContainer">
+                <div class="flexContainerContactme">
+                    <div class="containerContactMe">
+                        <h2>Contact Me</h2>
+                        <form action="/send" method="post">
+                            <!-- Nombre completo -->
+                            <p>Full Name:</p>
+                            <div class="form-row">
+                                <input type="text" id="FirstName" name="FirstName" required>
+                                <input type="text" id="LastName" name="LastName" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="FirstName" class="form-label">First Name</label>
+                                <label for="LastName" class="form-label">Last Name</label>
+                            </div>
+                            
+                            <!-- Correo electrónico -->
+                            <p>E-mail:</p>
+                            <input type="email" id="Email" name="Email" class="form-input" required>
+                            <p class="hint">example@example.com</p>
+                            
+                            <!-- Mensaje -->
+                            <p>Message:</p>
+                            <textarea id="Message" name="Message" class="form-input" rows="4" required></textarea>
+                            
+                            <!-- Botón de envío -->
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+    
                 </div>
-
+            
+    
+                <div class="video-section">
+                    <h2 class="title_flex">Presentación de Oficinas</h2>
+                    <video width="560" height="315" controls>
+                        <source src="assets/TheOffice.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+    
+    
+                </div>
+    
+                <div class="map-section">
+                    <h3 class="title_flex">Our Location</h3>
+                    <!-- Agrega aquí el iframe de Google Maps -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+    
+                            
             </div>
-        
-
-            <div class="video-section">
-                <h2>Presentación de Oficinas</h2>
-                <video width="560" height="315" controls>
-                    <source src="assets/TheOffice.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
-                </video>
-
-
-            </div>
-
-            <div class="map-section">
-                <h3>Our Location</h3>
-                <!-- Agrega aquí el iframe de Google Maps -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-                        
         </div>
-        
 
 
     </section>
@@ -241,7 +242,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 MichaelPoveda. Todos los derechos reservados.</p>
+            <p>&copy; 2024 MichaelPoveda. Data Analyst and Web Developer.</p>
             <p>Contacto: mpoveda@broadnetla.com | Tel: +593 96 878 6281</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/michael-poveda-195683252/" target="_blank"><i class="fab fa-linkedin"></i></a>
