@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header class="nav gradient-background">
+    <header class="nav">
         <nav class ="navbar">
             <div class="navbar-logo"><img src="assets/icon.png" alt="" class="logo"></div>
             <ul  class="navbar-menu">
@@ -37,7 +37,7 @@
     </section>
 
     <!-- Sobre Mí -->
-    <section id="about-me" class="gradient-background-2" >
+    <section id="about-me">
         <div class="about-header">
             <div class="aboutme-image">
                 <img src="assets/profile_img.jpg" alt="Foto de perfil" class="profile-photo">
@@ -102,95 +102,87 @@
 
     <!-- Proyectos -->
     
-    <section id="projects" class="gradient-background pb-4">
-
-        <div class="container">
-
-            <div class="row flex-lg-row-reverse align-items-center g-5 text-center">
-                <h2 class="titleh2 project-titulo">Projects</h2>
+    <section id="projects" class="gradient-background flexContainer">
+        <div class="myProjectsContainer">
+            <div class="h2Proyect">
+                <h2>My Projects</h2>
             </div>
-            <div class="row">
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <h3 class="project-sub">Predicting Customer Churn with AI Models</h3>
-                        <p class="white text">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
-                        <img src="./assets/ProjectChurn.jpg" class="d-block w-100 img-project" alt="...">
-                        
-                      </div>
-                      <div class="carousel-item">
-                        <h3 class="project-sub">Customer Segmentation for Banking Insights</h3>
-                        <p class="white text">Utilized clustering models in Python to categorize bank clients into segments, enabling targeted marketing and personalized service strategies.</p>
-                        <img src="./assets/ProjectCluster.jpg" class="d-block  w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <h3 class="project-sub">Analyzing Service Efficiency in Client Requests</h3>
-                        <p class="white text">Assessed response efficiency and request patterns across branches using Power BI and Python, providing insights into executive performance and service bottlenecks.</p>
-                        <img src="./assets/ProjectRequeriments.png" class="d-block  w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <h3 class="project-sub">Tindog: A Fun Web App for Dog Lovers</h3>
-                        <p class="white text">Created a mock website using HTML, CSS, and Bootstrap to showcase web development skills, mimicking a "Tinder for dogs" platform for practice.</p>
-                        <img src="./assets/ProjectTinDog.png" class="d-block  w-100" alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
 
-            </div> 
+            <div class="project project1">
+                <div class="projectImg">
+                    <img src="assets/ProjectChurn.jpg" alt="" class="imgProyect">
+                </div>
+                <div class="projectInfo">
+                    <div class="contenedorCentral">
+                        <h3 class="projectName1">Predicting Customer Churn with AI Models</h3>
+                        <h4 class="projectTech1">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain1">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="project project2">
+                <div class="projectInfo">
+                    <div class="contenedorCentral">
+                        <h3 class="projectName2">Predicting Customer Churn with AI Models</h3>
+                        <h4 class="projectTech2">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain2">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                    </div>
+                </div>
+                <div class="projectImg">
+                    <img src="assets/ProjectCluster.jpg" alt="" class="imgProyect">
+                </div>
+            </div>
+
+            <div class="project project3">
+                <div class="projectImg">
+                    <img src="assets/ProjectRequeriments.png" alt="" class="imgProyect">
+
+                </div>
+                <div class="projectInfo">
+                    <div class="contenedorCentral">
+                        <h3 class="projectName1">Predicting Customer Churn with AI Models</h3>
+                        <h4 class="projectTech1">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain1">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+
+            <div class="project project4">
+                <div class="projectInfo">
+                    <div class="contenedorCentral">
+                        <h3 class="projectName2">Predicting Customer Churn with AI Models</h3>
+                        <h4 class="projectTech2">Tech: Pandas, scikit-learn</h4>
+                        <p class="projectExplain2">Developed a predictive model in Python to identify potential customer churn based on various behavioral factors, enhancing proactive retention strategies</p>
+                    </div>
+                </div>
+                <div class="projectImg">
+                    <img src="assets/ProjectTinDog.png" alt="" class="imgProyect">
+
+                </div>
+                
+            </div>
+
 
         </div>
 
-        
-    
     </section>
 
 
     <!-- Contacto -->
 
     <section id="contactme">
-        <div class="contact-container">
-            <div class="form-box">
-                <h2>Contact Me</h2>
-                <form>
-                    <div class="input-box">
-                        <input type="text" placeholder="Name" required>
-                        <span class="icon">👤</span>
-                    </div>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email" required>
-                        <span class="icon">✉️</span>
-                    </div>
-                    <div class="input-box">
-                        <textarea placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </div>
-            <div class="illustration">
-                <!-- Puedes incluir aquí una imagen o SVG para el personaje decorativo -->
-                <div class="character">
-                    <span class="emoji">📧</span>
-                    <p>I'm here to help you!</p>
-                </div>
-            </div>
-
-            <div class="map-section">
-                <h3>Our Location</h3>
-                <!-- Agrega aquí el iframe de Google Maps -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            
+        <div class="map-section">
+            <h3>Our Location</h3>
+            <!-- Agrega aquí el iframe de Google Maps -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
@@ -205,6 +197,6 @@
         </footer>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
