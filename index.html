@@ -136,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="project project3">
+            <div class="project project1">
                 <div class="projectImg">
                     <img src="assets/ProjectRequeriments.png" alt="" class="imgProyect">
 
@@ -153,7 +153,7 @@
                 
             </div>
 
-            <div class="project project4">
+            <div class="project project2">
                 <div class="projectInfo">
                     <div class="contenedorCentral">
                         <h3 class="projectName2">Predicting Customer Churn with AI Models</h3>
@@ -176,14 +176,66 @@
 
     <!-- Contacto -->
 
-    <section id="contactme">
-        <div class="map-section">
-            <h3>Our Location</h3>
-            <!-- Agrega aquí el iframe de Google Maps -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <section id="contactme" class="flexContainer">
+        
+
+        <div class="GridContainer">
+            <div class="flexContainerContactme">
+                <div class="containerContactMe">
+                    <h2>Contact Us</h2>
+                    <p class="subheading">Please fill this form in a decent manner</p>
+                    <form action="/send" method="post">
+                        <!-- Nombre completo -->
+                        <p>Full Name:</p>
+                        <div class="form-row">
+                            <input type="text" id="FirstName" name="FirstName" required>
+                            <input type="text" id="LastName" name="LastName" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <label for="LastName" class="form-label">Last Name</label>
+                        </div>
+                        
+                        <!-- Correo electrónico -->
+                        <p>E-mail:</p>
+                        <input type="email" id="Email" name="Email" class="form-input" required>
+                        <p class="hint">example@example.com</p>
+                        
+                        <!-- Mensaje -->
+                        <p>Message:</p>
+                        <textarea id="Message" name="Message" class="form-input" rows="4" required></textarea>
+                        
+                        <!-- Botón de envío -->
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+        
+
+            <div class="video-section">
+                <h2>Presentación de Oficinas</h2>
+                <video width="560" height="315" controls>
+                    <source src="assets/TheOffice.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+
+
+            </div>
+
+            <div class="map-section">
+                <h3>Our Location</h3>
+                <!-- Agrega aquí el iframe de Google Maps -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.635494658772!2d-122.08424968469382!3d37.42199977982553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5cabe1a759b%3A0x8ad0e93fb2ee7f67!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616574740002!5m2!1sen!2sus"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+                        
         </div>
+        
+
+
     </section>
 
     <!-- Footer -->
